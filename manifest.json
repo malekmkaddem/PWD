@@ -1,0 +1,21 @@
+{
+  "name": "Progressive Web Design",
+  "short_name": "PWD",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+    "scope": "/",
+  "icons": [
+    {
+      "src": "Icon-196.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    },
+    {
+      "src": "Icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+    "start_url": "/index.html"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PWD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width">
+    <link rel = "Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="Stylesheet" href="styles.css">
+  
+    </head>
+
+<body id ="backimage">
+   
+    <div class="ui selection dropdown">
+  <input type="hidden" name="Background">
+  <i class="dropdown icon"></i>
+  <div class="default text">Page Background Display</div>
+  <div class="menu">
+    <div onclick="LightBlueDisplay()" id ="item1" class="item" data-value="1">Light Blue</div>
+    <div onclick="LightGoldDisplay()" id ="item2" class="item" data-value="0">Light Gold</div>
+      
+  </div>
+</div>
+    
+        <h1> Progressive Web Design</h1>
+    
+    <div id="PWDcontainer">
+    <h3> Do you know what Progessive Web Design can offer?</h3>
+        <p id="PWDtext1"> PWD (Progessive Web Design) is the new apps generation! It offers many so many tools that are so close or same to what a native app would offer! Here are some of the main characteristics of a PWA .   </p>
+    <div id = "PWDtext2"> 
+        <ul id ="list">
+        <li id ="char1">Push notifications <p> sending push notifications to users is one of the most used feature in native apps. This feature is also available in PWD. Push notifcations can ensure user's interactivity with the app is sustained and may lead to increase in sales.(In case the web app in question offers online shopping. )    </p></li>
+        <li id ="char2">Use Background Sync <p>In case of a loss of internet connexion , this feature will allow the user to perform an action (writing a comment , or reply to a message , etc..) that will be saved and applied later as soon as the device estabishes an internet connection. </p></li>
+            <li id ="char1">Offline mode <p>Offline mode is a very usefull feature that helps a PWD app function fast enough to be mistaken for a native one. (If all other PWD requirements are met or exceeded , eventually.) Using cash memory to store files in the user's browser (images , css styles , external links...) , the app would run smoother and faster as fetching documents won't be for everyfile , since a lot of them are alrady stored within the users's web browser. Oh , also Giving user's some content to interact with in case of bad or non existing internet connexion is better than a "ERR_INTERNET_DISCONNECTED" message display. </p></li>
+        <li id ="char1"> Safety <p> PWD apps are served through secure HTTPS, so unauthorized users/Hackers can’t access any content.</p></li>
+        </ul>
+        </div>
+    </div>
+  
+    
+  
+   
+   
+        
+     <footer id ="footer">
+    <p>Apps should be judjed by the experience it shall deliver to the user and not by the language the app is written in , nor by it's type, i mean , if a PWD can offer a reliable , fast , and engaging web app that appears on your phone home screen, right next to all your apps, then , it is also an app!</p>
+    </footer>
+    
+   
+    <script> 
+  $('.ui.dropdown')
+  .dropdown();
+    </script>
+
+    <script>
+        function LightBlueDisplay() {
+   document.getElementById("backimage").style.backgroundImage = "url(lightblue.jpg)";
+}
+        function LightGoldDisplay() {
+   document.getElementById("backimage").style.backgroundImage = "url(lightgold.jpg)";
+}
+</script>
+    
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
+        
+</body>
+
+</html>
+
+
+
+
+
+    
+    
+
+
+

@@ -1,0 +1,29 @@
+/*Laptop/pc Styles*/
+body{
+  width: 100%;
+    text-align: center;
+    
+}
+
+
+
+p{
+ 
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+
+/*Mobile/tablets Styles*/
+
+@media screen (orientation: landscape) , (max-width:660px) {
+    
+    
+    
+    
+}
