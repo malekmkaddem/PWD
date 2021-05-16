@@ -1,23 +1,26 @@
 /*Laptop/pc Styles*/
 body{
-  width: 100%;
-    text-align: center;
-    display: inline-block;
-    
+ 
+
 }
 
-
+#PWDcontainer{
+    
+      width: 60%;
+    text-align: justify;
+    display:grid;
+}
 
 p{
  
 }
 
 #footer {
-  position: absolute;
+  position:static;
   bottom: 0;
   width: 100%;
   height: 2.5rem;  
-    display: flex; /* Footer height */
+    display: grid; /* Footer height */
 }
 
 
@@ -25,7 +28,34 @@ p{
 
 @media screen (orientation: landscape) , (max-width:660px) {
     
+    body{
+         position:absolute;
+         top: 1%;
+         left: 15%;
+         font-family: cursive;
+         font-size: 70%;
+        
+    }
     
+    #PWDcontainer{
+    
+    width: 60%;
+    text-align: justify;
+    display:grid;
+}
+    
+    
+    
+    #footer {
+    
+    top: 130%;
+    left: -10%;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+    display: grid; /* Footer height */
+}
     
     
 }
